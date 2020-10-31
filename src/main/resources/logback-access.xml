@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<appender name="STDOUT"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<Pattern>combined</Pattern>
+			<Pattern>[ACCESS] %t{yyyy-MM-dd HH:mm:ss.SSS} "%requestURL" %s %b %D ms</Pattern>
+		</encoder>
+	</appender>
+
+	<appender-ref ref="STDOUT" />
+</configuration>
