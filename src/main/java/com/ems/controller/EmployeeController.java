@@ -1,3 +1,4 @@
+
 package com.ems.controller;
 
 import java.util.List;
@@ -36,7 +37,7 @@ public class EmployeeController {
 		if (!AppFeaturesEnum.FEATURE_ONE.isActive()) {
 			throw new ResourceNotFoundException("Get employees service is not activated");
 		}
-		asyncService.asyncLog("Log Message Asynchronously");
+//		asyncService.asyncLog("Log Message Asynchronously");
 		System.out.println("CHANGING");
 		System.out.println("CHANGING");
 		return employeeRepository.findAll();
